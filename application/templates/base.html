@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="uk-background-secondary uk-light">
+	<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='ico/apple-touch-icon.png')}}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='ico/favicon-32x32.png')}}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='ico/favicon-16x16.png')}}">
+	<link rel="manifest" href="{{url_for('static', filename='ico/site.manifest')}}">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="description" content="lol">
+	<meta name="keywords" content="youtube, downloader">
+	<meta name="author" content="ayuly0">
+	<meta property="og:title" content="YouTube Video Downloader">
+	<meta property="og:site_name" content="Xulium">
+	<meta property="og:description" content="The youtube video downloader">
+	<meta property="og:type" content="video.movie">
+	<meta property="og:url" content="idk">
+	<meta property="og:image" content="{{url_for('static', filename='ico/favicon-32x32.png')}}">
+	<meta name="twitter:card" content="{{url_for('static', filename='ico/favicon-32x32.png')}}">
+    <title>Xulium - {% block title %}{% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/uikit.min.css')}}" />
+
+    <!-- UIkit JS -->
+    <script src="{{url_for('static', filename='js/uikit.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/uikit-icons.min.js')}}"></script>
+
+	<!-- App CSS -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}" />
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>	
+      
+	</head>
+	<body>
+  {% block content %}
+  {% endblock %}
+	</body>
+</html>
